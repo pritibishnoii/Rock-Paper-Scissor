@@ -4,8 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="main-container">
+        <header class="head-section">
+            <h1>ROCK  <br> PAPER <br> SCISSORS</h1>
+            <div class="result-ScorBox">
+                <div class="score-box" >
+                <h3>COMPUTER<br> SCORE</h3>   <span id="compScore">0</span>
+                 </div>
+                 <div class="score-box">
+                    <h3>YOUR  <br>SCORE</h3> <span id="userScore">0</span>
+                 </div>
+            </div> 
+           
+        </header>
+
+
+
+
+        <div class="game-card">
+           
+            <div class="img-card">
+                <!-- frsit-part  --> <!-- 💚💚💚💚💚 -->
+                <div class="frist-part">
+                    <div class="rock-circl circl">
+                        <div class="white-circle">
+
+                            <img  id="rock" src="images/rock.png" alt="rock">
+                        </div>
+
+                    </div>
+                    
+                      <div class="line-1">
+                        <img src="images/Line 1.png" alt="">
+                      </div>
+                    
+                    <div class="scissor-circl  circl">
+                        <div class="white-circle">
+                        <img id="scissor" src="images/scissor.png" alt="scissor">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 💚💚💚💚💚 -->
+                <!-- second part -->
+               <div class="second-part">
+              <div class="left-line">
+                <img  id= "line2" src="images/Line 2.png" alt="Line 2">
+              </div>
+               <div class="right-line">
+                <img  id= "line3" src="images/Line 3.png" alt="Line 3">
+               </div>
+               </div>
+
+               <!-- 💚💚💚💚💚 -->
+                <div class="third-part">
+                    <div class="paper-circl circl">
+                        <div class="white-circle">
+                        <img  id="paper" src="images/paper.png" alt="paper">
+                        </div>
+                    </div>
+                   
+                </div>
+               
+            </div>
+
+
+
+           <div class="game-rules">
+                <h1>Game Rules</h1>
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+               <div class="cross-circl">
+                <img  class="x-img" src="images/cross.png" alt="cross">
+               </div>
+               <button id="close-btn">Rules</button>
+            </div> 
+        </div>
+        
+    </div>
+
 </body>
 </html>
