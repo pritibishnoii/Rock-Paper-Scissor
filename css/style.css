@@ -23,6 +23,7 @@ body{
  
   width: 100%;
   height: 100%;
+  position: relative;
 
 }
 .main-container .head-section{
@@ -42,7 +43,7 @@ body{
 .main-container .head-section h1{
   color:var(--white); 
   font-size: .5rem;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 2px;
 }
 
@@ -67,16 +68,19 @@ body{
   font-weight: 800;
 
 }
-.main-container  .head-section  #compScore,#userScore{
-  font-size: .9rem;
+ .head-section  #compScore,#userScore{
+  font-size: .8rem;
   font-weight: bold;
   color: #000000;
+
+
 }
 
 .main-container  .game-card{
   width: 60vw;
   margin: auto;
 display: flex;
+
 
 /* background-color: #FFFFFF; */
 margin-top: 7%;
@@ -86,7 +90,8 @@ margin-top: 7%;
   width: 50%;
 
 }
-.main-container  .game-card .game-rules{
+.game-rules{
+  /* display: block; */
   background-color: #004429;
   width: 230px;
   height: 270px;
@@ -98,12 +103,12 @@ margin-top: 7%;
 position: relative;
 
 }
-.main-container .game-card .game-rules ul {
+.game-rules ul {
 list-style-type:square;
 
 
 }
-.main-container .game-card .game-rules h1{
+.game-rules h1{
   font-size: .4rem;
   letter-spacing: 1px;
   color: #FFFFFF;
@@ -114,7 +119,7 @@ list-style-type:square;
 
 
 
-.main-container .game-card .game-rules ul li {
+.game-rules ul li {
 font-size: 12px;
  font-weight: 300;
  margin-left: 12px;
@@ -125,36 +130,48 @@ li::marker{
   line-height: .5rem;
 }
 
-.cross-circl{
+#cross-circl{
+  display: block;
   background-color: red;
   width: 50px;
   height: 50px;
   border: 4px solid #FFFFFF;
-  border-radius: 70px;
+  border-radius: 100%;
   position: absolute;
-  top: -13%;
-  left: 88%;
+  top: -12%;
+  left: 90%;
   cursor: pointer;
 }
-.cross-circl .x-img{
+#cross-circl .x-img{
   width: 20px;
-  margin: 10px;
+  margin: 10px 11px;
 }
-#close-btn{
+
+.buttons{
+  gap: 8px;
+  width: 18%;
+ position: fixed;
+  left: 70%;
+  top: 82%;
+}
+.btn{
   outline: none;
-  width: 45%;
+  width: 8vmax;
   padding: 6px;
   border: 2px solid #FFFFFF;
   background: transparent;
   border-radius: 10px;
-  color: #FFFFFF;
+  color: var(--white);
   font-weight: 600;
   font-size: .3rem;
   text-transform: uppercase;
-  position: absolute;
-  top: 107%;
-  left: 64%;
+  margin-top: 40px;
   cursor: pointer;
+ 
+}
+.btn a{
+  color:var(--white);
+  text-decoration: none;
 }
 
 

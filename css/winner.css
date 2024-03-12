@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --green :#8CC461;
+    --white:#FFFFFF;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+  }
+  
+  html{
+    font-size: 3rem;
+  }
+
+  body{
+    background-color: var(--green);
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100%;
+
+  }
+.win-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+  
+}
+.stars{
+    width: 100%;
+    height: 64vh;
+    display: flex;
+    /* background-color: crimson; */
+    justify-content: center;
+    align-items: center;
+
+
+  }
+ 
+
+.cup-box{
+    position: absolute;
+    top: 23%; 
+    left: 43%;
+  }
+
+
+.heading-div{
+    line-height: 1rem;
+    width: 100%;
+    /* height: 30vh; */
+    display: flex;
+    flex-direction: column;
+}
+
+.headings{
+    max-width: 50%;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    margin-top: 11px;
+}
+.headings h1{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    letter-spacing: 12px;
+    font-weight:500;
+    line-height: 1.3rem;
+}
+.headings h3{
+    color: #FFFFFF;
+    font-size: .6rem;
+    font-weight: 500;
+    letter-spacing: 6px;
+
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.7vw;
+}
+.btns  .btn{
+    width: 11vw;
+    background-color: var(--white);
+    padding: .8vw;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    color: #6B6B6B;
+    font-size: .3rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#rules-btn{
+    outline: none;
+    width: 8vmax;
+    padding: 6px;
+    border: 2px solid #FFFFFF;
+    background: transparent;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: .3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: fixed;
+    right: 4%;
+   bottom: 4%;
+
+}
+
+.game-rules{
+  /* display: block; */
+  background-color: #004429;
+  width: 230px;
+  height: 270px;
+  padding: 12px;
+  border: 4px solid #FFFFFF;
+  border-radius: 12px;
+  color: #FFFFFF;
+position: absolute;
+top: 40%;
+right: 5%;
+
+
+}
+.game-rules ul {
+  list-style-type:square;
+  
+  
+  }
+  .game-rules h1{
+    font-size: .4rem;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+  
+  
+  
+  .game-rules ul li {
+  font-size: 12px;
+   font-weight: 300;
+   margin-left: 12px;
+  }
+  li::marker{
+    color:yellow;
+    font-size: .4rem;
+    line-height: .5rem;
+  }
+  
+  #cross-circl{
+    display: block;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #FFFFFF;
+    border-radius: 100%;
+    position: absolute;
+    top: -12%;
+    left: 90%;
+    cursor: pointer;
+  }
+  #cross-circl .x-img{
+    width: 20px;
+    margin: 10px 11px;
+  }
+  
