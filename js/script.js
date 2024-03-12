@@ -47,7 +47,7 @@ rulesBtn.addEventListener('click' , ()=>{
     gameRules.style.display='block'; 
 })
 
-closeButton.addEventListener('click' ,(e)=>{
+closeButton.addEventListener('click' ,()=>{
     gameRules.style.display = 'none'
 })
 
