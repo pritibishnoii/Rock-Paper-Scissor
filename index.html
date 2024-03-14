@@ -24,11 +24,9 @@
         </header>
 
 
-
 <!--💚💚💚💚💚 triangle part  💚💚💚💚💚-->
-        <div class="game-card" style="display: none;">
-           
-            <div class="img-card">
+        <div class="game-card" style="display: none;" >
+            <div class="img-card" >
                 <!-- frsit-part  --> <!-- 💚💚💚💚💚 -->
                 <div class="frist-part">
                     <div class="rock-circl circl">
@@ -72,22 +70,86 @@
                 </div>
                
             </div>
-
-<!--💚💚💚💚💚 Game Rules Card---  part  💚💚💚💚💚--> 
-           <div class="game-rules" id="rulesBox"  >
-                <h1>Game Rules</h1>
-                <ul>
-                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
-                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
-                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
-                    <li>If both players lay down the same hand, each player lays down another hand</li>
-                </ul>
-               <div id="cross-circl">
-                <img  class="x-img" src="images/cross.png" alt="cross">
-               </div>
-            </div> 
-
         </div>
+
+
+
+<!--  💚💚💚💚💚  Result part   💚💚💚💚💚 -->
+
+
+        <div class="result-page"  >
+            <!-- <div class="mobile-result"  >
+                <p>
+                    <span id="resultSpan1">YOU WIN</span>
+                        AGAINST MOBILE
+                </p>
+            </div> -->
+            <div class="result-headings">
+                <div class="user-choosed user">
+                    <p>YOU PICKED</p>
+                    <div class="choose-option" >
+                        <img src="" alt="" id="myResult" >
+                        <div id="userWinIndicator" class="circle-animationDiv" style="display: flex;">
+                            <div class=" first circle " style="--circle :1" ></div>
+                            <div class=" second circle " style="--circle :2" ></div>
+                            <div class="third circle " style="--circle :3"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- *********** -->
+                <div class="pc-result">
+                    
+                        <span id="resultSpan">You Win
+                        <br>
+                        <p >AGAINST PC</p>
+                    </span>
+                    <button onclick="window.location.reload()" class="playAgain-btn ">PLAY AGAIN</button>
+                </div>
+                 <!-- *********** -->
+
+                <div class="pc-choosed pc">
+                    <p>PC PICKED</p>
+                    <div class="choose-option paper">
+                        <img src alt ="" id = aiResult>
+                        <div id="aiWinIndicator" class="circle-animationDiv" style="display: flex;">
+                            <div class="first circle" style="--circle :1" ></div>
+                            <div class="second circle"style="--circle :2" ></div>
+                            <div class="third circle" style="--circle :3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-result">
+                <button onclick="window.location.reload()" class="play-again" id="replay-choose">REPLAY</button>
+            </div>
+        </div> 
+   
+ 
+
+
+
+
+
+
+        <!--💚💚💚💚💚 Game Rules Card---  part  💚💚💚💚💚--> 
+    
+        <div class="game-rules" id="rulesBox"  >
+            <h1>Game Rules</h1>
+            <ul>
+                <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                <li>If both players lay down the same hand, each player lays down another hand</li>
+            </ul>
+           <div id="cross-circl">
+            <img  class="x-img" src="images/cross.png" alt="cross">
+           </div>
+        </div> 
+
+
+        
         <div class="buttons">
             <button id="rules-btn" class="btn">Rules</button>
            <button id="next-btn" class="btn"><a href="winner.html" target="_top">NEXT</a></button>
