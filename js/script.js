@@ -8,8 +8,8 @@ const nextBtn = document.getElementById("next-btn");
 const circlesOpt = document.querySelectorAll(".options");
 const gameScreen = document.querySelector(".game-triangle");
 
-let userScore = document.getElementById("userScore");
-let compScore = document.getElementById("compScore");
+// let userScore = document.getElementById("userScore");
+// let compScore = document.getElementById("compScore");
 
 const gameResult = document.querySelector(".gameResult");
 const playAgain = document.querySelector(".play-again");
@@ -81,7 +81,7 @@ const playGame = (userClick) => {
     console.log("You win");
     nextBtn.style.display = "flex";
     document.getElementById("win").innerText = "YOU WIN";
-    userScore += 1;
+    userScore ++;
   } else if (userClick === computerClick) {
     console.log("Tie up");
     document.getElementById("win").innerText = "Tie UP";
@@ -91,7 +91,7 @@ const playGame = (userClick) => {
   } else {
     console.log("You lose");
     document.getElementById("win").innerText = "YOU LOST";
-    compScore += 1;
+    compScore ++;
   }
   document.getElementById("userScore").innerText = userScore;
   document.getElementById("compScore").innerText = compScore;
@@ -99,12 +99,13 @@ const playGame = (userClick) => {
 };
 playAgain.addEventListener("click", () => {
   location.reload();
-  showScore();
-  saveScore();
+  // saveScore();
+  // showScore();
 });
+
 function saveScore() {
-  localStorage.setItem("user", userScore);
-  localStorage.setItem("comp", compScore);
+  localStorage.setItem("userScore", userScore); 
+  localStorage.setItem("compScore", compScore); 
 }
 
 function showScore() {
@@ -115,6 +116,6 @@ function showScore() {
 }
 
 window.onload = function () {
-  saveScore();
   showScore();
 };
+
