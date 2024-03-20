@@ -16,7 +16,7 @@
                 <div class="score-box" >
                 <h3>COMPUTER<br> SCORE</h3>   <span id="compScore">0</span>
                  </div>
-                 <div class="score-box">
+                 <div class="score-box"  >
                     <h3>YOUR  <br>SCORE</h3> <span id="userScore">0</span>
                  </div>
             </div> 
@@ -25,106 +25,64 @@
 
 
 <!--💚💚💚💚💚 triangle part  💚💚💚💚💚-->
-        <div class="game-card" style="display: none;" >
-            <div class="img-card" >
-                <!-- frsit-part  --> <!-- 💚💚💚💚💚 -->
-                <div class="frist-part">
-                    <div class="rock-circl circl">
-                        <div class="white-circle">
+<div class="game-triangle">
+   <div class="game-part">
+    <div class="circles c1" >
+        <img src="images/rock.png"  alt="rock" id="rock" class="options">
+    </div>
+    <div class="line-1">
+        <img src="images/Line 1.png" alt="line1">
+    </div>
+    <div class="circles c2">
+        <img src="images/scissor.png" alt="scissor"  id="scissor" class="options">
+    </div>
+   </div>
+   <div class="game-part">
+    
+    <div class="line-3">
+        <img src="images/Line 3.png" alt="line1">
+    </div>
+    <div class="circles c3" >
+        <img src="images/paper.png" alt="scissor" id="paper" class="options">
+    </div>
+    <div class="line-2">
+        <img src="images/Line 2.png" alt="line1">
+    </div>
+   </div>
 
-                            <img  id="rock" src="images/rock.png" alt="rock">
-                        </div>
-
-                    </div>
-                    
-                      <div class="line-1">
-                        <img src="images/Line 1.png" alt="">
-                      </div>
-                    
-                    <div class="scissor-circl  circl">
-                        <div class="white-circle">
-                        <img id="scissor" src="images/scissor.png" alt="scissor">
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 💚💚💚💚💚 -->
-                <!-- second part -->
-               <div class="second-part">
-              <div class="left-line">
-                <img  id= "line2" src="images/Line 2.png" alt="Line 2">
-              </div>
-               <div class="right-line">
-                <img  id= "line3" src="images/Line 3.png" alt="Line 3">
-               </div>
-               </div>
-
-               <!-- 💚💚💚💚💚 -->
-                <div class="third-part">
-                    <div class="paper-circl circl">
-                        <div class="white-circle">
-                        <img  id="paper" src="images/paper.png" alt="paper">
-                        </div>
-                    </div>
-                   
-                </div>
-               
-            </div>
-        </div>
+</div>
 
 
 
 <!--  💚💚💚💚💚  Result part   💚💚💚💚💚 -->
+<div class="gameResult">
+    <div id="userPicked" >
+        <h1>you picked</h1>
+        <div class="result">
+        </div>
+       
+    </div>
 
+    <div class="winHeading">
+        <h1 id="win"></h1>
+        <span id="AGAINST-PC">AGAINST PC</span>
+            <button class="play-again">play again</button>
+            <button class="play-again"  id="replay" onclick="window.location.reload()">replay</button>
+    </div>
+   
+   
+    <div id="pcPicked" >
+        <h1>pc picked</h1>
+              
+        <div class="result">
+        </div>
+        
+    </div>
 
-        <div class="result-page"  >
-            <!-- <div class="mobile-result"  >
-                <p>
-                    <span id="resultSpan1">YOU WIN</span>
-                        AGAINST MOBILE
-                </p>
-            </div> -->
-            <div class="result-headings">
-                <div class="user-choosed user">
-                    <p>YOU PICKED</p>
-                    <div class="choose-option" >
-                        <img src="" alt="" id="myResult" >
-                        <div id="userWinIndicator" class="circle-animationDiv" style="display: flex;">
-                            <div class=" first circle " style="--circle :1" ></div>
-                            <div class=" second circle " style="--circle :2" ></div>
-                            <div class="third circle " style="--circle :3"></div>
-                        </div>
-                    </div>
-                </div>
+ 
+</div>
 
-
-                <!-- *********** -->
-                <div class="pc-result">
-                    
-                        <span id="resultSpan">You Win
-                        <br>
-                        <p >AGAINST PC</p>
-                    </span>
-                    <button onclick="window.location.reload()" class="playAgain-btn ">PLAY AGAIN</button>
-                </div>
-                 <!-- *********** -->
-
-                <div class="pc-choosed pc">
-                    <p>PC PICKED</p>
-                    <div class="choose-option paper">
-                        <img src alt ="" id = aiResult>
-                        <div id="aiWinIndicator" class="circle-animationDiv" style="display: flex;">
-                            <div class="first circle" style="--circle :1" ></div>
-                            <div class="second circle"style="--circle :2" ></div>
-                            <div class="third circle" style="--circle :3"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mobile-result">
-                <button onclick="window.location.reload()" class="play-again" id="replay-choose">REPLAY</button>
-            </div>
-        </div> 
+       
    
  
 
@@ -152,8 +110,8 @@
         
         <div class="buttons">
             <button id="rules-btn" class="btn">Rules</button>
-           <button id="next-btn" class="btn"><a href="winner.html" target="_top">NEXT</a></button>
         </div>
+        <button id="next-btn" ><a href="winner.html" target="_top">NEXT</a></button>
         
     </div>
 </body>

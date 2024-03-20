@@ -76,98 +76,50 @@
     letter-spacing: 6px;
 
 }
-.btns{
-    display: flex;
-    justify-content: center;
-    margin-top: 1.7vw;
+.play-again{
+  width: 174px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: #FFF;
+  align-items: center;
+  display:flex;    
+  justify-content: center;
+  border: none;
+  font-size: .4rem;
+ 
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  outline: none;
+  margin: 0 auto;
 }
-.btns  .btn{
-    width: 11vw;
-    background-color: var(--white);
-    padding: .8vw;
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    color: #6B6B6B;
-    font-size: .3rem;
-    cursor: pointer;
-    font-weight: 600;
+.play-again a{
+  color: #6B6B6B;
+  text-decoration: none;
 }
-
 #rules-btn{
-    outline: none;
-    width: 8vmax;
-    padding: 6px;
-    border: 2px solid #FFFFFF;
-    background: transparent;
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-weight: 600;
-    font-size: .3rem;
-    text-transform: uppercase;
-    cursor: pointer;
-    position: fixed;
-    right: 4%;
-   bottom: 4%;
+  width: 120px;
+  padding: 8px;
+border: 2px solid #FFF;
+  border-radius: 9px;
+  background:transparent;
+  color: #FFF;
 
+  font-size: .3rem;
+ font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: absolute;
+ bottom: 0;
+  right: 5%;
+ 
+  
 }
 
-.game-rules{
-  /* display: block; */
-  background-color: #004429;
-  width: 230px;
-  height: 270px;
-  padding: 12px;
-  border: 4px solid #FFFFFF;
-  border-radius: 12px;
-  color: #FFFFFF;
-position: absolute;
-top: 40%;
-right: 5%;
 
 
-}
-.game-rules ul {
-  list-style-type:square;
-  
-  
-  }
-  .game-rules h1{
-    font-size: .4rem;
-    letter-spacing: 1px;
-    color: #FFFFFF;
-    text-align: center;
-    margin-bottom: 12px;
-    font-weight: 500;
-  }
-  
-  
-  
-  .game-rules ul li {
-  font-size: 12px;
-   font-weight: 300;
-   margin-left: 12px;
-  }
-  li::marker{
-    color:yellow;
-    font-size: .4rem;
-    line-height: .5rem;
-  }
-  
-  #cross-circl{
-    display: block;
-    background-color: red;
-    width: 50px;
-    height: 50px;
-    border: 4px solid #FFFFFF;
-    border-radius: 100%;
-    position: absolute;
-    top: -12%;
-    left: 90%;
-    cursor: pointer;
-  }
-  #cross-circl .x-img{
-    width: 20px;
-    margin: 10px 11px;
-  }
-  
+
+
+
+
