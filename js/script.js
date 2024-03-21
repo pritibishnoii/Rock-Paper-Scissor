@@ -8,8 +8,6 @@ const nextBtn = document.getElementById("next-btn");
 const circlesOpt = document.querySelectorAll(".options");
 const gameScreen = document.querySelector(".game-triangle");
 
-// let userScore = document.getElementById("userScore");
-// let compScore = document.getElementById("compScore");
 
 const gameResult = document.querySelector(".gameResult");
 const playAgain = document.querySelector(".play-again");
@@ -45,7 +43,7 @@ function displayResult() {
 
   let addUserElm = `
     <div class="circles round1" >
-        <img src="../images/${userClick}.png" alt="">
+        <img src="../images/${userClick}.png" alt="img">
     </div>
     
    `;
@@ -59,7 +57,7 @@ function displayResult() {
   ) {
     let pcPicked = document.getElementById("pcPicked");
     pcPicked.innerHTML += `<div class="circles round2" >
-        <img src="../images/${computerClick}.png" alt="">
+        <img src="../images/${computerClick}.png" alt="img">
     </div>`;
   }
 }
