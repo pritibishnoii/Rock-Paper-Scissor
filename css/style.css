@@ -95,6 +95,7 @@ body {
   position: absolute;
   right: 7%;
   top: 40%;
+  display: none;
 }
 .game-rules ul {
   list-style-type: square;
