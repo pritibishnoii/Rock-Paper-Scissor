@@ -155,11 +155,11 @@ li::marker {
   font-weight: 600;
   font-size: 0.3rem;
   text-transform: uppercase;
-  margin-top: 38px;
+  margin-top: 34px;
   cursor: pointer;
 }
 
-/* #next-btn{
+#next-btn{
   display: none;
   outline: none;
   width: 8vmax;
@@ -175,13 +175,14 @@ li::marker {
   cursor: pointer;
 position: absolute;
 right: 7%;
-bottom: 6%;
+bottom: 3%;
 
-} */
+}
 #next-btn  a {
   color: var(--white);
   text-decoration: none;
- /* margin-left: 28%; */
+ 
+
 }
 
 

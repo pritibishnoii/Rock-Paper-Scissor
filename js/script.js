@@ -77,9 +77,9 @@ const playGame = (userClick) => {
     (userClick === "paper" && computerClick === "rock")
   ) {
     console.log("You win");
-    nextBtn.style.display = "flex";
     document.getElementById("win").innerText = "YOU WIN";
     userScore ++;
+    document.getElementById('next-btn').style.display= "block";
   } else if (userClick === computerClick) {
     console.log("Tie up");
     document.getElementById("win").innerText = "Tie UP";
@@ -97,8 +97,7 @@ const playGame = (userClick) => {
 };
 playAgain.addEventListener("click", () => {
   location.reload();
-  // saveScore();
-  // showScore();
+
 });
 
 function saveScore() {
