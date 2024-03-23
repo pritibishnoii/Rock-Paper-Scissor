@@ -118,7 +118,58 @@ border: 2px solid #FFF;
 }
 
 
+.game-rules {
+  background-color: #004429;
+  width: 230px;
+  height: 270px;
+  padding: 12px;
+  border: 4px solid #ffffff;
+  border-radius: 12px;
+  color: #ffffff;
+  position: absolute;
+  right: 7%;
+  top: 40%;
+  display: none;
+}
+.game-rules ul {
+  list-style-type: square;
+}
+.game-rules h1 {
+  font-size: 0.4rem;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
 
+.game-rules ul li {
+  font-size: 12px;
+  font-weight: 300;
+  margin-left: 12px;
+}
+li::marker {
+  color: yellow;
+  font-size: 0.4rem;
+  line-height: 0.5rem;
+}
+
+#cross-circl {
+  display: block;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #ffffff;
+  border-radius: 100%;
+  position: absolute;
+  top: -12%;
+  left: 90%;
+  cursor: pointer;
+}
+#cross-circl .x-img {
+  width: 16px;
+  margin: 13px;
+}
 
 
 

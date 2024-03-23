@@ -159,7 +159,7 @@ li::marker {
   cursor: pointer;
 }
 
-#next-btn{
+/* #next-btn{
   display: none;
   outline: none;
   width: 8vmax;
@@ -177,11 +177,11 @@ position: absolute;
 right: 7%;
 bottom: 6%;
 
-}
+} */
 #next-btn  a {
   color: var(--white);
   text-decoration: none;
- margin-left: 28%;
+ /* margin-left: 28%; */
 }
 
 
